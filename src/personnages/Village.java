@@ -39,7 +39,7 @@ public class Village {
 		int i=0;
 		System.out.println("Dans le village du chef "+chef.getNom()+"  vivent les légendaires gaulois:");
 		while (i!=nbVillageois) {
-			System.out.println("-"+villageois[i]);
+			System.out.println("-"+villageois[i].getNom());
 			i++;
 		}
 	}
@@ -58,8 +58,8 @@ public class Village {
 		Chef abraracourcix = new Chef("Abraracourcix",6, 0,village);
 		Gaulois asterix = new Gaulois("Astérix",8);
 		Gaulois obelix = new Gaulois("Obélix",25);
-		village.ajouterHabitant(obelix);
 		village.ajouterHabitant(asterix);
+		village.ajouterHabitant(obelix);
 		village.afficherVillageois(abraracourcix);
 		//Gaulois gaulois = village.trouverHabitant(1);
 		// il y a un probleme de variable qui sont dupliqué
